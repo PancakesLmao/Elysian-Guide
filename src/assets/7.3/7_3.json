@@ -1,0 +1,20 @@
+{
+    "version": "7.3",
+    "battlesuits": [
+        {
+            "name": "Valkyrie Blastmetal",
+            "type": "Psychic",
+            "dmgElement": "Fire"
+        },
+        {
+            "name": "Valkyrie Boltstorm",
+            "type": "Mecha",
+            "dmgElement": "Lightnight"
+        },
+        {
+            "name": "Deepspace Anchor",
+            "type": "Star dust",
+            "dmgElement": "Lightnight"
+        }
+    ]
+}
