@@ -1,0 +1,10 @@
+{
+    "version": "7.9",
+    "battlesuits": [
+        {
+            "name": "Thousand-Faced Maestro: Cameo!",
+            "type": "Quantum",
+            "dmgElement": "Fire"
+        }
+    ]
+}

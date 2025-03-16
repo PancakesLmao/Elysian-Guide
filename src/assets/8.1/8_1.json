@@ -1,0 +1,10 @@
+{
+    "version": "8.1",
+    "battlesuits": [
+        {
+            "name": "Ba-Dum! Fiery Wishing Star",
+            "type": "Stardust",
+            "dmgElement": "Fire"
+        }
+    ]
+}

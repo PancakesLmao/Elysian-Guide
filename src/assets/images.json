@@ -1,0 +1,10 @@
+{
+    "worldStar_light": "/src/assets/astral_ring/world_star_light.png",
+    "worldStar_dark": "/src/assets/astral_ring/world_star_dark.png",
+    "wheelOfDestiny_light": "/src/assets/astral_ring/wheel_of_destiny_light.png",
+    "wheelOfDestiny_dark": "/src/assets/astral_ring/wheel_of_destiny_dark.png",
+    "riteOfOblivion_light": "/src/assets/astral_ring/rite_of_oblivion_light.png",
+    "riteOfOblivion_dark": "/src/assets/astral_ring/rite_of_oblivion_dark.png",
+    "lawOfAscension_light": "/src/assets/astral_ring/law_of_ascension_light.png",
+    "lawOfAscension_dark": "/src/assets/astral_ring/law_of_ascension_dark.png"
+}

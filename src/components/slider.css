@@ -1,0 +1,38 @@
+.main-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 5px;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.thumbnail.active {
+  border: 3px solid #007bff;
+  transform: scale(1.2);
+}

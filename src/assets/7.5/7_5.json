@@ -1,0 +1,10 @@
+{
+    "version": "7.5",
+    "battlesuits": [
+        {
+            "name": "Lone Destruction: Shadowchaser",
+            "type": "Psychic",
+            "dmgElement": "Fire"
+        }
+    ]
+}

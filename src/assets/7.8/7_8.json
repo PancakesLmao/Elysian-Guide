@@ -1,0 +1,10 @@
+{
+    "version": "7.8",
+    "battlesuits": [
+        {
+            "name": "Lone Planetfarer",
+            "type": "Mecha",
+            "dmgElement": "Lightning"
+        }
+    ]
+}

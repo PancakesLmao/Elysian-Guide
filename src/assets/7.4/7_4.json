@@ -1,0 +1,10 @@
+{
+    "version": "7.4",
+    "battlesuits": [
+        {
+            "name": "Mad Pleasure: Shadowbringer",
+            "type": "Mecha",
+            "dmgElement": "Ice"
+        }
+    ]
+}

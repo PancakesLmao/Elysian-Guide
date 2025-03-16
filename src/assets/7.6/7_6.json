@@ -1,0 +1,10 @@
+{
+    "version": "7.6",
+    "battlesuits": [
+        {
+            "name": "Jovial Deception: Shadowdimmer",
+            "type": "Stardust",
+            "dmgElement": "Physical"
+        }
+    ]
+}
