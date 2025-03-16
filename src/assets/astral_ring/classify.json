@@ -5,22 +5,22 @@
         {
             "charName": "Sparkle",
             "suitName": "Thousand-Faced Maestro: Cameo!",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.9/d5ed6ba996156b1d12e48429626df47e_9206317750584199081.png"
         },
         {
             "charName": "Theresa",
             "suitName": "Schicksal's Imperative",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.7/568f2db858f5974e0a5014b08164c1dd_3491786973064450904.png"
         },
         {
             "charName": "Senadina",
             "suitName": "Deep Anchor: First Light",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.3/addcbc8e079f90489e02fe36b709d731_231256990666977016.png"
         },
         {
             "charName": "Helia",
             "suitName": "Valkyrie Boltstorm",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.3//8463af5ddb27fc157297e1adcb79f932_7024177407090263733.png"
         }]
     },
     {
@@ -29,12 +29,12 @@
         {
             "charName": "Vita",
             "suitName": "Lone Planetfarer",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.8/7d4646c932c09fc571fb650f473ce460_4035025171545173520.png"
         },
         {
             "charName": "Coralie",
             "suitName": "Valkyrie Blastmetal",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.3/9d6f06600af7cb5c5324474104168ba5_4972109042295372066.png"
         }]
     },
     {
@@ -43,17 +43,17 @@
         {
             "charName": "Songque",
             "suitName": "Jovial Deception: Shadowdimmer",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.6/aaeea77fcd9456c8a09aa9bea5c01f54_4942021958914705298.png"
         },
         {
             "charName": "Latern",
             "suitName": "Lone Destruction: Shadowchaser",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.5/0126d4c686166a882dedd458f9ec6bca_5343513819856290934.png"
         },
         {
             "charName": "Thelema",
             "suitName": "Mad Pleasure: Shadowbringer",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/7.4/809ff8eb15da4bce2a2be4d1d992e9da_923101522305644217.png"
         }]
     },
     {
@@ -62,12 +62,12 @@
         {
             "charName": "Kiana",
             "suitName": "Ba-Dum! Fiery Wishing Star",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/8.1/cf445abef2fe0580f38e5c485690773b_8875753571244685803.png"
         },
         {
             "charName": "Durandal",
             "suitName": "Reign Solaris",
-            "avatarSource": ""
+            "avatarSource": "/src/assets/8.0/a39138be12d7d61781ddfbf4d00163c1_2040993052675490226.png"
         }]
     }
 ]
