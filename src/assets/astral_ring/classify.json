@@ -1,0 +1,73 @@
+[
+    {
+    "name": "World Star",
+    "battlesuits": [
+        {
+            "charName": "Sparkle",
+            "suitName": "Thousand-Faced Maestro: Cameo!",
+            "avatarSource": ""
+        },
+        {
+            "charName": "Theresa",
+            "suitName": "Schicksal's Imperative",
+            "avatarSource": ""
+        },
+        {
+            "charName": "Senadina",
+            "suitName": "Deep Anchor: First Light",
+            "avatarSource": ""
+        },
+        {
+            "charName": "Helia",
+            "suitName": "Valkyrie Boltstorm",
+            "avatarSource": ""
+        }]
+    },
+    {
+    "name": "Rite of Oblivion",
+    "battlesuits": [
+        {
+            "charName": "Vita",
+            "suitName": "Lone Planetfarer",
+            "avatarSource": ""
+        },
+        {
+            "charName": "Coralie",
+            "suitName": "Valkyrie Blastmetal",
+            "avatarSource": ""
+        }]
+    },
+    {
+    "name": "Wheel of Destiny",
+    "battlesuits": [
+        {
+            "charName": "Songque",
+            "suitName": "Jovial Deception: Shadowdimmer",
+            "avatarSource": ""
+        },
+        {
+            "charName": "Latern",
+            "suitName": "Lone Destruction: Shadowchaser",
+            "avatarSource": ""
+        },
+        {
+            "charName": "Thelema",
+            "suitName": "Mad Pleasure: Shadowbringer",
+            "avatarSource": ""
+        }]
+    },
+    {
+    "name": "Law of Ascension",
+    "battlesuits": [
+        {
+            "charName": "Kiana",
+            "suitName": "Ba-Dum! Fiery Wishing Star",
+            "avatarSource": ""
+        },
+        {
+            "charName": "Durandal",
+            "suitName": "Reign Solaris",
+            "avatarSource": ""
+        }]
+    }
+]
