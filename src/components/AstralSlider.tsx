@@ -1,4 +1,4 @@
-import imagesJson from "../assets/images.json";
+import imagesJson from "../assets/astral_ring/astral_rings.json";
 import battlesuitsJson from "../assets/astral_ring/classify.json";
 import signetJson from "../assets/signets/signets_en.json"
 import "./slider.css";
@@ -24,22 +24,6 @@ const imageToCategory: Record<string, string> = {
   wheelOfDestiny_light: "Wheel of Destiny",
   lawOfAscension_light: "Law of Ascension",
 };
-
-// // Assuming signetJson is the parsed JSON data
-const elysiaData = signetJson.find(signet => signet.name === "Elysia");
-
-if (elysiaData && elysiaData.charSignets) {
-  elysiaData.charSignets.forEach(valkyrie => {
-    console.log(`Valkyrie: ${valkyrie.suitName}`);
-    
-    valkyrie.signets.forEach(signet => {
-      console.log(`  - ${signet.name}: ${signet.description}`);
-    });
-  });
-} else {
-  console.log("Elysia signets not found.");
-}
-
 
 export default function AstralSlider() {
   const imageList: ImageKeys[] = [
@@ -104,11 +88,11 @@ export default function AstralSlider() {
         </div>
         <h2 className="text-2xl text-center">{currentCategory?.name}</h2>
         <div
-          className={`category-section h-lvh flex p-4 ${
+          className={`category-section flex border-2 border-solid ${
             fade ? "fade-out" : "fade-in"
           }`}
         >
-          <div className="col-3">
+          <div className="col-3 border-2 border-solid">
             {/* Battlesuit list */}
             <div className="battlesuit-list flex flex-col">
               {currentCategory?.battlesuits.map((battlesuit) => (
@@ -130,15 +114,15 @@ export default function AstralSlider() {
               ))}
             </div>
           </div>
-          <div className="col-7 grid grid-cols-2 w-[100%]">
+          <div className="col-7 border-2 border-solid grid grid-cols-2 w-[100%] p-4">
             <div className="row-span-1 col-span-2">
-              <h1 className="text-center">Signet details</h1>
+              <h1 className="text-center text-xl">Signet details</h1>
             </div>
             {selectedSignets && selectedSignets.length > 0 ? (
               selectedSignets.map((signet) => (
-                <div key={signet.name} className="signet-item p-2 border">
+                <div key={signet.name} className="signet-item p-4 border">
                   <div className="signet-icon">
-                    {/* Add icon if available */}
+                    <img src={elysiaData?.iconSource} alt={signet.name}></img>
                   </div>
                   <div className="signet-desc">
                     <h3 className="font-bold">{signet.name}</h3>
@@ -147,7 +131,7 @@ export default function AstralSlider() {
                 </div>
               ))
             ) : (
-              <div className="col-span-2 text-center text-gray-500">
+              <div className="col-span-2 p-4 text-center text-gray-500">
                 Select a battlesuit to view signet build
               </div>
             )}
