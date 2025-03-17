@@ -86,19 +86,19 @@ export default function AstralSlider() {
             />
           ))}
         </div>
-        <h2 className="text-2xl text-center">{currentCategory?.name}</h2>
+        <h2 className="text-2xl text-center mb-4">{currentCategory?.name}</h2>
         <div
           className={`category-section flex border-2 border-solid ${
             fade ? "fade-out" : "fade-in"
           }`}
         >
-          <div className="col-3 border-2 border-solid">
+          <div className="col-3 border-1 border-solid">
             {/* Battlesuit list */}
             <div className="battlesuit-list flex flex-col">
               {currentCategory?.battlesuits.map((battlesuit) => (
                 <div
                   key={battlesuit.suitName}
-                  className={`battlesuit-card w-40 gap-x-8 p-2 ${
+                  className={`battlesuit-card justify-items-center w-40 gap-x-8 p-2 ${
                     selectedBattlesuit === battlesuit.suitName ? "selected" : ""
                   }`}
                   onClick={() => handleBattlesuitClick(battlesuit.suitName)}
@@ -109,18 +109,18 @@ export default function AstralSlider() {
                     alt={battlesuit.charName}
                   />
                   <h3>{battlesuit.charName}</h3>
-                  <p>{battlesuit.suitName}</p>
+                  <h3 className="text-center">{battlesuit.suitName}</h3>
                 </div>
               ))}
             </div>
           </div>
-          <div className="col-7 border-2 border-solid grid grid-cols-2 w-[100%] p-4">
+          <div className="col-7 border-1 border-solid grid grid-cols-2 w-[100%] p-4">
             <div className="row-span-1 col-span-2">
-              <h1 className="text-center text-xl">Signet details</h1>
+              <h1 className="text-center text-xl">Details</h1>
             </div>
             {selectedSignets && selectedSignets.length > 0 ? (
               selectedSignets.map((signet) => (
-                <div key={signet.name} className="signet-item p-4 border">
+                <div key={signet.name} className="signet-item p-4 border m-2">
                   <div className="signet-icon">
                     <img src={elysiaData?.iconSource} alt={signet.name}></img>
                   </div>
