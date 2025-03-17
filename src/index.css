@@ -1,4 +1,16 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Lexend";
+  src: url(./assets/fonts/Lexend/Lexend-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway-Italic";
+  src: url(./assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

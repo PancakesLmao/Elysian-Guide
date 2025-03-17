@@ -1,5 +1,5 @@
 import flameChasers from "../assets/flame_chasers/cards.json";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./cardsDisplay.css";
 
 interface FlameChaserData {
@@ -18,7 +18,7 @@ export default function CardList() {
   return (
     <>
       <div className="gallery-container w-full overflow-x-hidden">
-        <div className="character-gallery flex overflow-x-auto">
+        <div className="character-gallery font-[Raleway] flex overflow-x-auto">
           {FlameChaserData.map((character, index) => (
             <div
               key={character.name}
