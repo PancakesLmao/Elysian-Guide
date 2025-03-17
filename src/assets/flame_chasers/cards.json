@@ -2,78 +2,91 @@
     {
         "name": "Kevin",
         "ranking": 1,
+        "numeral": "I",
         "signetName": "Deliverance",
         "imageSource": "/src/assets/flame_chasers/kevin_card.png"
     },
     {
         "name": "Elysia",
         "ranking": 2,
-        "signetName": "■■",
+        "numeral": "II",
+        "signetName": "Ego",
         "imageSource": "/src/assets/flame_chasers/elysia_card.png"
     },
     {
         "name": "Aponia",
         "ranking": 3,
+        "numeral": "III",
         "signetName": "Disciplinee",
         "imageSource": "/src/assets/flame_chasers/aponia_card.png"
     },
     {
         "name": "Eden",
         "ranking": 4,
+        "numeral": "IV",
         "signetName": "Gold",
         "imageSource": "/src/assets/flame_chasers/eden_card.png"
     },
     {
         "name": "Vill-V",
         "ranking": 5,
+        "numeral": "V",
         "signetName": "Helix",
         "imageSource": "/src/assets/flame_chasers/vill-v_card.png"
     },
     {
         "name": "Kalpas",
         "ranking": 6,
+        "numeral": "VI",
         "signetName": "Decimation",
         "imageSource": "/src/assets/flame_chasers/kalpas_card.png"
     },
     {
         "name": "Su",
         "ranking": 7,
+        "numeral": "VII",
         "signetName": "Bodhi",
         "imageSource": "/src/assets/flame_chasers/su_card.png"
     },
     {
         "name": "Sakura",
         "ranking": 8,
+        "numeral": "VIII",
         "signetName": "Setsuna",
         "imageSource": "/src/assets/flame_chasers/sakura_card.png"
     },
     {
         "name": "Kosma",
         "ranking": 9,
+        "numeral": "IX",
         "signetName": "Daybreak",
         "imageSource": "/src/assets/flame_chasers/kosma_card.png"
     },
     {
         "name": "Mobius",
         "ranking": 10,
+        "numeral": "X",
         "signetName": "Infinity",
         "imageSource": "/src/assets/flame_chasers/mobius_card.png"
     },
     {
         "name": "Griseo",
         "ranking": 11,
+        "numeral": "XI",
         "signetName": "Star",
         "imageSource": "/src/assets/flame_chasers/griseo_card.png"
     },
     {
         "name": "Hua",
         "ranking": 12,
+        "numeral": "XII",
         "signetName": "Vicissitude",
         "imageSource": "/src/assets/flame_chasers/hua_card.png"
     },
     {
         "name": "Pardofelis",
         "ranking": 13,
+        "numeral": "XIII",
         "signetName": "Reverie",
         "imageSource": "/src/assets/flame_chasers/pardofelis_card.png"
     }
