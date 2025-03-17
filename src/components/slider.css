@@ -14,9 +14,7 @@
 }
 
 .thumbnail-container {
-  display: flex;
   gap: 10px;
-  margin-top: 10px;
 }
 
 .thumbnail {
@@ -37,4 +35,16 @@
 .thumbnail.active {
   border: 3px solid #007bff;
   transform: scale(1.2);
+}
+.battlesuit-card.active {
+  border: 3px solid #007bff;
+}
+
+.battlesuit-card {
+  cursor: pointer;
+}
+
+.battlesuit-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

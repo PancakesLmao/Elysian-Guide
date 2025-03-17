@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Elysia",
+        "iconSource": "/src/assets/signets/blessings/elysia_signet.webp",
+        "charSignets": [
+            {
+                "suitName" : "Valkyrie Blastmetal",
+                "type": "Exclusive",
+                "signets" : [
+                    {
+                        "name": "Blessing of Bolt",
+                        "description": "Ultimate restores 50 Astral Ring Intensity and resets Stellar Outburst's CD. During Stellar Outburst, aerial Weapon Enhanced ATK has enhanced follow-up ability. Ultimate deals 1200% ATK of bonus Fire DMG. Valkyrie Blastmetal's Weapon Enhanced ATK deals 600% ATK of bonus Fire DMG."
+                    },
+                    {
+                        "name": "Blessing of Sky Blitz",
+                        "description": "The character has Iron Body while in the air, and deals 40% bonus Total DMG when in Iron Body or Invincibility."
+                    },
+                    {
+                        "name": "Blessing of Readiness",
+                        "description": "During Stellar Outburst, the first 2 aerial Weapon Enhanced ATKs do not consume Quantum Mech Energy and each restores 5 SP and reduces Ultimate CD by 2s on hit. Weapon Skills and Ultimate deal 40% bonus Fire DMG."
+                    },
+                    {
+                        "name": "Blessing of Primer",
+                        "description": "Stage 1 Leap becomes Weapon Enhanced ATK SEQ 3, and restores 5 Hammering Feel or Quantum Mech Energy. Stage 2 Leap comes with an attack which deals 300% x 2 ATK of Fire DMG. Combo ATK has a larger range and consumes all Hammering Feel stacks. Each stack consumed makes Combo ATK deals 400% ATK of bonus Fire DMG per hit. With full Astral Ring Intensity, enemies take 50% bonus Fire DMG from the character (independent)."
+                    },
+                    {
+                        "name": "Blessing of Proficiency",
+                        "description": "After Stage 2 Leap, the next Weapon Enhanced ATK does not const Hammering Feel. After consuming 5 stacks of Hammering Feel, the current Combo ATK deals 40% bonus Total DMG, and its last hit deals 3000% ATK of bonus Fire DMG."
+                    }
+                ]
+            },
+            {
+                "suitName" : "Valkyrie Boltstorm",
+                "type": "Exclusive",
+                "signets" : [
+                    {
+                        "name": "Blessing of Vivace",
+                        "description": "During Stellar Outburst, 2 extra exclusive marks are created. Rapid Shot can activate Domain Resonance marks. When hitting enemies, the exclusive marks unleash chain lightning which deals 1200% x 3 ATK of Lightning DMG to each enemy. Each mark can only trigger chain lightning once per second. The mark is removed after triggering 4 times or when Stellar Outburst ends. Stellar Outburst's duration is reduced to 15s. When not in Stellar Outburst, the character restores 15 Astral Ring Intensity on hit. CD: 1s."
+                    },
+                    {
+                        "name": "Blessing of Resolution",
+                        "description": "When the character triggers follow-up attacks after unleashing Explosive Device, she immediately restores 200 Rapid Shot Energy plus 60 Astral Ring Intensity if Stellar Outburst is inactive. During Rapid Shot, the character gains 1 stack of Survey Marker every 0.2s. Casting Targeted Bombardment consumes all Survey Markers, and each stack consumed deals 120% ATK of bonus Lightning DMG, up to 3 stacks. When Astral Ring is active, the maximum stacks cap at 10, and the CD for grenades is reduced to 5s."
+                    },
+                    {
+                        "name": "Blessing of Meditation",
+                        "description": "During Ultimate, Time-frozen Domain is triggered which additionally deals 1500% ATK of bonus Lightning DMG and restores 200 Rapid Shot Energy."
+                    },
+                    {
+                        "name": "Blessing of Improvisation",
+                        "description": "When not in Stellar Outburst, Rapid Shot deals 55% ATK of bonus Lightning DMG. After absorbing Energy Catalyst, the next attack creates a black hole which continuously gathers enemies in a large area."
+                    },
+                    {
+                        "name": "Blessing of Sparkling Lightning",
+                        "description": "When not in Stellar Outburst, Rapid Shot deals 45% ATK of bonus Lightning DMG per hit and enemies drop Energy Catalyst on hit. The character can absorb Energy Catalyst when near to obtain 140 Rapid Shot Energy and trigger Targeted Bombardment (considered Weapon Skill). Additionally, if her Astral Ring is fully charged in 7s, she deals 40% bonus Total DMG; Rapid Shot consts no Rapid Shot Energy and she restores 30 HP per 0.5s. During Rapid Shot, her Move Speed increases by 100%. After an Energy Catalyst drops or is absorbed, no more can drop in 7s."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Kevin",
+        "iconSource": "/src/assets/signets/others/kevin_signet.webp",
+        "signets": [
+            {
+                "name": "text",
+                "type": "Core",
+                "description": "desc"
+            },
+            {
+                "name": "text",
+                "type": "Enchanced",
+                "description": "desc"
+            }
+        ]
+    }
+]

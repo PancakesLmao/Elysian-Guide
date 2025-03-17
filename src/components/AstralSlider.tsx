@@ -1,6 +1,7 @@
-import imagesJson from '../assets/images.json'
-import battlesuitsJson from '../assets/astral_ring/classify.json'
-import './slider.css'
+import imagesJson from "../assets/images.json";
+import battlesuitsJson from "../assets/astral_ring/classify.json";
+import signetJson from "../assets/signets/signets_en.json"
+import "./slider.css";
 import React, { useState } from "react";
 
 type ImageKeys = keyof typeof imagesJson;
@@ -16,6 +17,7 @@ interface BattlesuitCategory {
 }
 const battlesuitData: BattlesuitCategory[] = battlesuitsJson;
 
+
 const imageToCategory: Record<string, string> = {
   worldStar_light: "World Star",
   riteOfOblivion_light: "Rite of Oblivion",
@@ -23,7 +25,23 @@ const imageToCategory: Record<string, string> = {
   lawOfAscension_light: "Law of Ascension",
 };
 
-export default function AstralSlider() { 
+// // Assuming signetJson is the parsed JSON data
+const elysiaData = signetJson.find(signet => signet.name === "Elysia");
+
+if (elysiaData && elysiaData.charSignets) {
+  elysiaData.charSignets.forEach(valkyrie => {
+    console.log(`Valkyrie: ${valkyrie.suitName}`);
+    
+    valkyrie.signets.forEach(signet => {
+      console.log(`  - ${signet.name}: ${signet.description}`);
+    });
+  });
+} else {
+  console.log("Elysia signets not found.");
+}
+
+
+export default function AstralSlider() {
   const imageList: ImageKeys[] = [
     "worldStar_light",
     "wheelOfDestiny_light",
@@ -32,6 +50,9 @@ export default function AstralSlider() {
   ];
 
   const [currentImage, setCurrentImage] = useState<ImageKeys>(imageList[0]);
+  const [selectedBattlesuit, setSelectedBattlesuit] = useState<string | null>(
+    null
+  );
   const [fade, setFade] = useState(false);
   const currentCategory = battlesuitData.find(
     (cat) => cat.name === imageToCategory[currentImage]
@@ -42,50 +63,97 @@ export default function AstralSlider() {
     setTimeout(() => {
       setCurrentImage(id);
       setFade(false);
+      setSelectedBattlesuit(null); // Reset selected battlesuit
     }, 300);
   };
 
+  const handleBattlesuitClick = (suitName: string) => {
+    setSelectedBattlesuit(suitName);
+    console.log("Selected battlesuit:", suitName);
+  };
   const getHoverImage = (id: ImageKeys) => {
     return id.includes("_light")
       ? images[id.replace("_light", "_dark") as ImageKeys]
       : images[id];
   };
 
+  // Find signets for the selected battlesuit
+  const elysiaData = signetJson.find((signet) => signet.name === "Elysia");
+  const selectedSignets = selectedBattlesuit
+    ? elysiaData?.charSignets?.find(
+        (valk) => valk.suitName === selectedBattlesuit
+      )?.signets
+    : [];
+
   return (
-    <div className="slider-container flex flex-col items-center h-lvh">
-      <div className={`category-section ${fade ? "fade-out" : "fade-in"}`}>
-        <h2 className="text-2xl ">{currentCategory?.name}</h2>
-        <div className="battlesuit-list flex justify-center">
-          {currentCategory?.battlesuits.map((battlesuit) => (
-            <div
-              key={battlesuit.charName}
-              className="battlesuit-card w-40 gap-x-8 p-2"
-            >
-              <img
-                className="w-[100px]"
-                src={battlesuit.avatarSource || "default-avatar.png"}
-                alt={battlesuit.charName}
-              />
-              <h3>{battlesuit.charName}</h3>
-              <p>{battlesuit.suitName}</p>
-            </div>
+    <>
+      <div className="slider-container flex flex-col">
+        {/* Astral options */}
+        <div className="thumbnail-container flex my-[10px] justify-center">
+          {imageList.map((id) => (
+            <img
+              key={id}
+              src={images[id]}
+              alt={id}
+              className={`thumbnail ${currentImage === id ? "active" : ""}`}
+              onClick={() => handleImageClick(id)}
+              onMouseEnter={(e) => (e.currentTarget.src = getHoverImage(id))}
+              onMouseLeave={(e) => (e.currentTarget.src = images[id])}
+            />
           ))}
         </div>
+        <h2 className="text-2xl text-center">{currentCategory?.name}</h2>
+        <div
+          className={`category-section h-lvh flex p-4 ${
+            fade ? "fade-out" : "fade-in"
+          }`}
+        >
+          <div className="col-3">
+            {/* Battlesuit list */}
+            <div className="battlesuit-list flex flex-col">
+              {currentCategory?.battlesuits.map((battlesuit) => (
+                <div
+                  key={battlesuit.suitName}
+                  className={`battlesuit-card w-40 gap-x-8 p-2 ${
+                    selectedBattlesuit === battlesuit.suitName ? "selected" : ""
+                  }`}
+                  onClick={() => handleBattlesuitClick(battlesuit.suitName)}
+                >
+                  <img
+                    className="w-[100px]"
+                    src={battlesuit.avatarSource || "default-avatar.png"}
+                    alt={battlesuit.charName}
+                  />
+                  <h3>{battlesuit.charName}</h3>
+                  <p>{battlesuit.suitName}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="col-7 grid grid-cols-2 w-[100%]">
+            <div className="row-span-1 col-span-2">
+              <h1 className="text-center">Signet details</h1>
+            </div>
+            {selectedSignets && selectedSignets.length > 0 ? (
+              selectedSignets.map((signet) => (
+                <div key={signet.name} className="signet-item p-2 border">
+                  <div className="signet-icon">
+                    {/* Add icon if available */}
+                  </div>
+                  <div className="signet-desc">
+                    <h3 className="font-bold">{signet.name}</h3>
+                    <p>{signet.description}</p>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div className="col-span-2 text-center text-gray-500">
+                Select a battlesuit to view signet build
+              </div>
+            )}
+          </div>
+        </div>
       </div>
-
-      <div className="thumbnail-container">
-        {imageList.map((id) => (
-          <img
-            key={id}
-            src={images[id]}
-            alt={id}
-            className={`thumbnail ${currentImage === id ? "active" : ""}`}
-            onClick={() => handleImageClick(id)}
-            onMouseEnter={(e) => (e.currentTarget.src = getHoverImage(id))}
-            onMouseLeave={(e) => (e.currentTarget.src = images[id])}
-          />
-        ))}
-      </div>
-    </div>
+    </>
   );
 }
