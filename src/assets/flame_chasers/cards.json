@@ -18,7 +18,7 @@
         "ranking": 3,
         "numeral": "III",
         "signetName": "Disciplinee",
-        "imageSource": "/src/assets/flame_chasers/aponia_card.png"
+        "imageSource": "https://cdn.jsdelivr.net/gh/PancakesLmao/Elysian-Guide@master/src/assets/flame_chasers/aponia_card.png"
     },
     {
         "name": "Eden",

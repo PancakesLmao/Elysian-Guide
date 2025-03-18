@@ -54,6 +54,32 @@
                         "description": "When not in Stellar Outburst, Rapid Shot deals 45% ATK of bonus Lightning DMG per hit and enemies drop Energy Catalyst on hit. The character can absorb Energy Catalyst when near to obtain 140 Rapid Shot Energy and trigger Targeted Bombardment (considered Weapon Skill). Additionally, if her Astral Ring is fully charged in 7s, she deals 40% bonus Total DMG; Rapid Shot consts no Rapid Shot Energy and she restores 30 HP per 0.5s. During Rapid Shot, her Move Speed increases by 100%. After an Energy Catalyst drops or is absorbed, no more can drop in 7s."
                     }
                 ]
+            },
+            {
+                "suitName" : "Deep Anchor: First Light",
+                "type": "Exclusive",
+                "signets" : [
+                    {
+                        "name": "Blessing of Initial Dawning",
+                        "description": "Thunder in Clear Skies deals 600% ATK of bonus Lighting DMG. During Thunderous Blazar, triggering Ultimate Evasion Skill extends Thunderous Blazar's duration by 3s. During Overheat, triggering Ultimate Evasion Skill clears Overheat."
+                    },
+                    {
+                        "name": "Blessing of Stellar Drive",
+                        "description": "Casting Ultimate or entering Stellar Outburst fully replenishes Ultimate Evasion Skill charges. Every time Ultimate Evasion Skill is triggered, weapon skills deal 10% bonus Total DMG and Ultimate deals 1500% ATK of bonus Lightning DMG for 15s, stacking up to 3 times. Retriggering refreshes duration. The effect ends when Ultimate hits. The character enters Thunderous Pulse upon triggering Ultimate Evasion Skill when not in Overheat."
+                    },
+                    {
+                        "name": "Blessing of Sudden Thunderbolt",
+                        "description": "The character deals 25% bonus Lightning DMG. Using Thunder in Clear Skies or Lightning Flash Anchor can activate the Domain Resonance mark 2 more times. CD: 0.7s. Triggering Ultimate Evasion Skill restores 2 Domain Resonance mark activation charges."
+                    },
+                    {
+                        "name": "Blessing of Effortlessness",
+                        "description": "Basic ATK, Combo ATK, and Charged ATK deal 30% bonus Lightning DMG. Triggering Ultimate Evasion Skill grants 1 stack (3 stacks max). The next Basic ATK SEQ 4, Thunder in Clear Skies, or Lightning Flash Anchor deals 1000% ATK of bonus Lightning DMG for each stack and consumes all stacks."
+                    },
+                    {
+                        "name": "Blessing of Increment",
+                        "description": "Enemies hit by the electromagnetic field activated by the Domain Resonance mark will be electroshocked multiple times and take 160% x 3 ATK of Lightning DMG (DMG source: Resonance)"
+                    }
+                ]
             }
         ]
     },
