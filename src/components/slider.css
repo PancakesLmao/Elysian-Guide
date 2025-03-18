@@ -28,16 +28,18 @@
 
 .thumbnail:hover {
   transform: scale(1.1);
-  
-  background-color: azure;
+  transition: ease-in-out 0.2s;
+  background-color: white;
+  opacity: 0.8;
 }
 
 .thumbnail.active {
-  border: 3px solid #007bff;
+  border-bottom: 3px solid #615FFF;
   transform: scale(1.2);
 }
-.battlesuit-card.active {
-  border: 3px solid #007bff;
+.battlesuit-card.selected {
+  border-left: 4px solid #615FFF;
+  background-image: linear-gradient(-90deg, transparent, transparent, transparent, #615FFF);
 }
 
 .battlesuit-card {
@@ -46,5 +48,6 @@
 
 .battlesuit-card:hover {
   transform: scale(1.05);
+  transition: ease-in-out 0.2s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

@@ -1,5 +1,4 @@
 .gallery-container {
-  width: 100%;
   overflow-x: hidden;
   background-color: transparent;
 }
@@ -12,6 +11,42 @@
 
 .character-gallery::-webkit-scrollbar {
   display: none;
+}
+
+/* Animation classes */
+.pre-animation {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.slide-up {
+  animation: slideUp 1.5s ease forwards;
+}
+
+.slide-down {
+  animation: slideDown 1.5s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .character-card {

@@ -73,7 +73,7 @@ export default function AstralSlider() {
     <>
       <div className="slider-container flex flex-col">
         {/* Astral options */}
-        <div className="thumbnail-container flex my-[10px] justify-center">
+        <div className="thumbnail-container flex my-[10px] justify-center border-b-indigo-500">
           {imageList.map((id) => (
             <img
               key={id}
@@ -88,11 +88,11 @@ export default function AstralSlider() {
         </div>
         <h2 className="text-2xl text-center mb-4">{currentCategory?.name}</h2>
         <div
-          className={`category-section flex border-2 border-solid ${
+          className={`category-section flex ${
             fade ? "fade-out" : "fade-in"
           }`}
         >
-          <div className="col-3 border-1 border-solid">
+          <div className="col-3">
             {/* Battlesuit list */}
             <div className="battlesuit-list flex flex-col">
               {currentCategory?.battlesuits.map((battlesuit) => (

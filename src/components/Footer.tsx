@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-center">&copy; 2025 Bluerail Express Team</p>
+      <p className="text-center p-4">&copy; 2025 Bluerail Express Team</p>
     </footer>
   );
 }
