@@ -49,8 +49,21 @@ export default function Footer() {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="!#" className="hover:underline">
+                    <a
+                      href="https://honkaiimpact3.hoyoverse.com/global/en-us/home"
+                      className="hover:underline"
+                      target="_blank"
+                    >
                       Honkai Impact Official
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      href="https://honkaiimpact3.fandom.com/"
+                      className="hover:underline"
+                      target="_blank"
+                    >
+                      Honkai Impact Wiki
                     </a>
                   </li>
                 </ul>

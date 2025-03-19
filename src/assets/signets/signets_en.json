@@ -80,7 +80,60 @@
                         "description": "Enemies hit by the electromagnetic field activated by the Domain Resonance mark will be electroshocked multiple times and take 160% x 3 ATK of Lightning DMG (DMG source: Resonance)"
                     }
                 ]
+            },
+            {
+                "suitName" : "Lone Planetfarer",
+                "type": "Exclusive",
+                "signets" : [
+                    {
+                        "name": "Blessing of Lovely Wishes",
+                        "description": "During Astral Ring Charging: Basic ATK SEQ 3 in Planet Quaker form deals damage over time to enemies hit, dealing multiple hits that total up to 600% ATK of Lightning DMG to enemies in the range over 1s. This counts as Basic ATK and Ultimate DMG. Basic ATKs (including Combo ATKs and Charged ATKs) deal 50% more Lightning DMG."
+                    },
+                    {
+                        "name": "Blessing of Cosmos",
+                        "description": "During Astral Ring Charging: Basic ATK SEQ 4 in Planet Quaker form deals damage over time to enemies hit, dealing multiple hits that total up to 2400% ATK of Lightning DMG to enemies in the range over 1s. This counts as Basic ATK and Ultimate DMG. Combo ATK deals an additional 2000% ATK of Lightning DMG. Casting Combo ATK refreshes the duration of Planet Quaker form and Weapon Skill CD. Casting Weapon Skill restores 160 Intelligence."
+                    },
+                    {
+                        "name": "Blessing of Lonesome Feathers",
+                        "description": "When Weapon Skill or Combo ATK hits enemies, they take 40% more Total DMG for 15s. Retriggering refreshes the duration."
+                    },
+                    {
+                        "name": "Blessing of Deep Love",
+                        "description": "During Stellar Outburst: When Celestial Rupture hits an enemy, it deals 1200% ATK of Lightning DMG to enemies in a large range. Lightning DMG dealt by Combo ATKs is increased by 60%."
+                    },
+                    {
+                        "name": "Blessing of Abyssal Aid",
+                        "description": "During Stellar Outburst: The duration of Stellar Outburst is increased to 35s. When Intelligence is full, hold [ATK] to cast Combo ATK and enter Intelligence Unleashed Mode. Every hit on an enemy deals an additional 450% ATK of Lightning DMG and can trigger Ultimate Evasion Skill. When Celestial Rupture hits an enemy, Ultimate Evasion Skill CD is reduced by 6s. Casting Weapon Skill restores 160 Intelligence and reduces Astral Ring CD to 5s. When exiting Stellar Outburst, Astral Ring Intensity is fully restored."
+                    }
+                ]
+            },
+            {
+                "suitName" : "Ba-Dum! Fiery Wishing Star",
+                "type": "Exclusive",
+                "signets" : [
+                    {
+                        "name": "Blessing of Dazzling Joy",
+                        "description": "In Merriment state, Basic ATK deals an additional 1000% ATK of Fire DMG, Basic ATK and Passion Mark's explosion on hit increase combo hit count by 10."
+                    },
+                    {
+                        "name": "Blessing of Fulfilled Wishes",
+                        "description": "Ultimate will summon 8 Majestic Fortune Drums (count as summoned entities). You can double jump between Majestic Fortune Drums, each jump causing 1 Resonance Divine Drum to resonate and explode (counts as Weapon Skill), dealing 500% ATK of Fire DMG to all enemies, restoring 12 SP, and reducing Ultimate CD by 2s. After the last Resonance Divine Drum explodes, immediately jump to perform a downward Combo ATK, dealing 1000% ATK of Fire DMG. Total DMG dealt by Ultimate and Majestic Fortune Drums increases by 100%."
+                    },
+                    {
+                        "name": "Blessing of Great Fortune",
+                        "description": "In Merriment state: Basic ATK starts from SEQ 3, ground or aerial SEQ 4 can be connected into each other, Immaculate Duet deals an additional 2025% ATK of Fire DMG and detonates 3 more Passion Marks; Merriment state no longer has a time limit, perform 2 Immaculate Duets and exit Merriment state to refresh Ultimate Evasion Skill's CD; Fully recovers Astral Ring Intensity at the start of a battle."
+                    },
+                    {
+                        "name": "Blessing of Serendipitous Luck",
+                        "description": "Triggering Ultimate Evasion Skill increases Total DMG by 60% for 15s. Retriggering refreshes duration."
+                    },
+                    {
+                        "name": "Blessing of Pleasant Dreams",
+                        "description": "Ultimate deals an additional 1500% ATK of Fire DMG. Within 10s of casting Ultimate, each double jump reduced Ultimate Evasion Skill CD by 2s and increases Fire DMG dealt by 11% (max 99%); DMG increase's rate and duration refreshed by retriggering."
+                    }
+                ]
             }
+
         ]
     },
     {
