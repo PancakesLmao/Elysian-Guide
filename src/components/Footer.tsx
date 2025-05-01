@@ -66,6 +66,15 @@ export default function Footer() {
                       Honkai Impact Wiki
                     </a>
                   </li>
+                  <li className="mb-4">
+                    <a
+                      href="https://honkai-impact-3rd-archives.fandom.com/"
+                      className="hover:underline"
+                      target="_blank"
+                    >
+                      Honkai Impact Archives Wiki
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div>

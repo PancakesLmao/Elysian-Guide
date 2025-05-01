@@ -1,7 +1,7 @@
 import imagesJson from "../assets/astral_ring/astral_rings.json";
 import battlesuitsJson from "../assets/astral_ring/classify.json";
 import signetJson from "../assets/signets/signets_en.json"
-import "./slider.css";
+import "./style/slider.css";
 import { useState } from "react";
 
 type ImageKeys = keyof typeof imagesJson;

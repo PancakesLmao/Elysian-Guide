@@ -1,6 +1,6 @@
 import flameChasers from "../assets/flame_chasers/cards.json";
 import { useState, useEffect } from "react";
-import "./cardsDisplay.css";
+import "./style/cardsDisplay.css";
 
 interface FlameChaserData {
   name: string;

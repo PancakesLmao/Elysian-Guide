@@ -4,10 +4,8 @@ import Astral_Slider from "./components/AstralSlider";
 import CardsDisplay from "./components/CardsDisplay";
 
 function App() {
-
   return (
     <>
-      <div className="app"></div>
       <CardsDisplay />
       <div className="relative">
         <div className="overlay top-0 left-0 w-full h-full"></div>
